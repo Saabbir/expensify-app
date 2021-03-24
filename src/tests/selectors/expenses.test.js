@@ -65,5 +65,5 @@ test('should sort by amount', () => {
     endDate: undefined
   };
   const result = expensesSelector(expenses, filters);
-  expect(result).toEqual([ expenses[1], expenses[2], expenses[0] ]);
+  expect(result).toEqual([ expenses[1], expenses[0], expenses[2] ]);
 });
