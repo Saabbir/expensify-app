@@ -6,7 +6,9 @@
     "serve": "live-server public",
     "build": "webpack --env=production",
     "dev": "webpack serve",
-    "test": "jest"
+    "test": "jest",
+    "start": "node server/server.js",
+    "heroku-postbuild": "npm run build"
   },
   "dependencies": {
     "@babel/cli": "^7.13.0",
