@@ -3,35 +3,13 @@ import {
   removeExpense,
   editExpense
 } from '../../actions/expenses';
+import expenses from '../fixtures/expenses';
 
 test('should return `ADD_EXPENSE` action object with provided values', () => {
-  const expenseData = {
-    description: 'rent',
-    note: 'last month rent',
-    amount: 6500,
-    createdAt: 158642
-  };
-  const actionObj = addExpense(expenseData);
+  const actionObj = addExpense(expenses[1]);
   expect(actionObj).toEqual({
     type: 'ADD_EXPENSE',
-    expense: {
-      id: expect.any(String),
-      ...expenseData
-    }
-  })
-});
-
-test('should return `ADD_EXPENSE` action object with default values', () => {
-  const actionObj = addExpense();
-  expect(actionObj).toEqual({
-    type: 'ADD_EXPENSE',
-    expense: {
-      id: expect.any(String),
-      description: '',
-      note: '',
-      amount: 0,
-      createdAt: 0
-    }
+    expense: expenses[1]
   })
 });
 
