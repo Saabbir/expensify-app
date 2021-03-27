@@ -25,5 +25,8 @@ firebase.initializeApp(firebaseConfig);
 
 // Get a reference to the database service
 const database = firebase.database();
+
+// Create Google auth instance
 const googleAuthProvider = new firebase.auth.GoogleAuthProvider();
+
 export { firebase, googleAuthProvider, database as default };
