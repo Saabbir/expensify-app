@@ -1,0 +1,33 @@
+.c-login-page {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #20232A;
+
+  &__content {
+    min-width: 25rem;
+    max-width: 50rem;
+    padding: $l-size $m-size;
+    background-color: #282C34;
+    box-shadow: 0 0 .1rem .1rem rgba(0, 0, 0, .1);
+    text-align: center;
+    border-radius: .4rem;
+    color: #fff;
+
+    @media (min-width: 576px) {
+      padding: $l-size;
+    }
+  }
+
+  &__title {
+    color: #61dafb;
+    margin: 0 0 $m-size 0;
+  }
+
+  &__tagline {
+    margin: 0;
+    font-size: 1.8rem;
+  }
+}
