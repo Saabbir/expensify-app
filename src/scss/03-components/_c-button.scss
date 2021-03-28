@@ -30,6 +30,11 @@
   &--link {
     background-color: transparent;
     color: #fff;
+
+    &:hover,
+    &:focus {
+      background-color: transparent;
+    }
   }
 
   &--yellow {

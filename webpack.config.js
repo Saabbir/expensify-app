@@ -5,7 +5,7 @@ module.exports = (env) => {
   const isProduction = env.production;
   
   return {
-    entry: './src/index.js',
+    entry: ['@babel/polyfill', './src/index.js'],
     output: {
       filename: 'bundle.js',
       path: path.resolve(__dirname, 'public/dist')
