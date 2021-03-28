@@ -1,7 +1,18 @@
 .c-button {
-  padding: 1.3rem 3.2rem;
+  padding: 1.6rem 3.2rem;
   border: 0;
   background-color: #61dafb;
   color: #000;
   font-size: 1.8rem;
+  font-weight: 400;
+
+  &--sm {
+    padding: 1rem 2rem;
+    font-size: 1.6rem;
+  }
+
+  &--link {
+    background-color: transparent;
+    color: #fff;
+  }
 }

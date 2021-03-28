@@ -1,0 +1,22 @@
+.c-header {
+  background-color: #20232A;
+  color: #fff;
+
+  &__content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1.6rem 0;
+    gap: 1.6rem;
+  }
+
+  &__title-link {
+    color: #fff;
+    text-decoration: none;
+  }
+
+  &__title {
+    color: #61dafb;
+    margin: 0;
+  }
+}
