@@ -1,0 +1,28 @@
+.DateRangePickerInput_clearDates {
+  width: 36px;
+  height: 36px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.c-form {
+
+  &--filters {
+    display: flex;
+    align-items: center;
+    gap: 1.6rem;
+    flex-wrap: wrap;
+  }
+
+  &__control {
+    border: .1rem solid #dbdbdb;
+    border-radius: .2rem;
+    background-color: #fff;
+    font-size: 19px;
+    line-height: 24px;
+    font-weight: 200;
+    padding: 6px 11px;
+    min-height: 48px;
+  }
+}
