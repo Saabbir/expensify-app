@@ -59,34 +59,47 @@ export default class ExpenseForm extends React.Component {
     return (
       <div>
         { this.state.submitError && <p>{this.state.submitError}</p> }
-        <form onSubmit={this.onSubmit}>
-          <input 
-            type="text"
-            placeholder="Description"
-            value={this.state.description}
-            onChange={this.onDescriptionChange}
-            autoFocus
-          />
-          <input 
-            type="text"
-            placeholder="Amount"
-            value={this.state.amount}
-            onChange={this.onAmountChange}
-          />
-          <SingleDatePicker  
-            date={this.state.createdAt}
-            onDateChange={this.onDateChange}
-            focused={this.state.calendarFocused}
-            onFocusChange={this.onFocusChange}
-            numberOfMonths={1}
-            isOutsideRange={() => false}
-          />
-          <textarea
-            placeholder="Expense Note (optional)"
-            value={this.state.note}
-            onChange={this.onNoteChange}
-          ></textarea>
-          <button>Add Expense</button>
+        <form className="c-form c-form--stack" onSubmit={this.onSubmit}>
+          <div className="c-form__group">
+            <input 
+              type="text"
+              className="c-form__control"
+              placeholder="Description"
+              value={this.state.description}
+              onChange={this.onDescriptionChange}
+              autoFocus
+            />
+          </div>
+          <div className="c-form__group">
+            <input 
+              type="text"
+              className="c-form__control"
+              placeholder="Amount"
+              value={this.state.amount}
+              onChange={this.onAmountChange}
+            />
+          </div>
+          <div className="c-form__group">
+            <SingleDatePicker  
+              date={this.state.createdAt}
+              onDateChange={this.onDateChange}
+              focused={this.state.calendarFocused}
+              onFocusChange={this.onFocusChange}
+              numberOfMonths={1}
+              isOutsideRange={() => false}
+            />
+          </div>
+          <div className="c-form__group">
+            <textarea
+              placeholder="Expense Note (optional)"
+              className="c-form__control c-form__control--textarea"
+              value={this.state.note}
+              onChange={this.onNoteChange}
+            ></textarea>
+          </div>
+          <div>
+            <button type="submit" className="c-button">Add Expense</button>
+          </div>
         </form>
       </div>
     );

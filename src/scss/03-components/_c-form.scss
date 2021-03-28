@@ -6,7 +6,28 @@
   justify-content: center;
 }
 
+.DateInput_input {
+  font-weight: 400;
+}
+
 .c-form {
+
+  ::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+    font-weight: 200;
+    opacity: 1;
+  }
+  ::-moz-placeholder { /* Firefox 19+ */
+    font-weight: 200;
+    opacity: 1;
+  }
+  :-ms-input-placeholder { /* IE 10+ */
+    font-weight: 200;
+    opacity: 1;
+  }
+  :-moz-placeholder { /* Firefox 18- */
+    font-weight: 200;
+    opacity: 1;
+  }
 
   &--filters {
     display: flex;
@@ -21,8 +42,30 @@
     background-color: #fff;
     font-size: 19px;
     line-height: 24px;
-    font-weight: 200;
+    font-weight: 400;
     padding: 6px 11px;
     min-height: 48px;
+
+    &:focus {
+      outline: none;
+    }
+  }
+
+  &__control--textarea {
+    min-height: 15rem;
+    resize: vertical;
+  }
+}
+
+.c-form--stack {
+  display: grid;
+  gap: 1.6rem;
+
+  .c-form__control,
+  .SingleDatePicker,
+  .SingleDatePickerInput,
+  .DateInput {
+    display: block;
+    width: 100%;
   }
 }

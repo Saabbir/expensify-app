@@ -22,7 +22,7 @@ class ExpenseListFilters extends React.Component {
             <input 
               type="text" 
               className="c-form__control"
-              placeholder="Search Expense" 
+              placeholder="Search Expenses" 
               value={this.props.filters.text} 
               onChange={(e) => {
                 this.props.dispatch(setTextFilter(e.target.value))

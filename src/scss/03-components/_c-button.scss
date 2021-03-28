@@ -8,6 +8,8 @@
   display: inline-block;
   line-height: 1;
   text-decoration: none;
+  // min-width: 20rem;
+  text-align: center;
 
   &--md {
     padding: 1.3rem 2.6rem;
@@ -22,5 +24,19 @@
   &--link {
     background-color: transparent;
     color: #fff;
+  }
+
+  &--yellow {
+    background-color: #ffe564;
+  }
+
+  &--secondary {
+    background-color: #888;
+    color: #fff;
+  }
+
+  &--block {
+    display: block;
+    width: 100%;
   }
 }
