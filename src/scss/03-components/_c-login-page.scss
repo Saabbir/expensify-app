@@ -4,26 +4,26 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  background-color: #20232A;
+  background-color: $bg-dark-100;
 
   &__content {
     min-width: 25rem;
     max-width: 36rem;
-    padding: $l-size $m-size;
-    background-color: #282C34;
+    padding: 3.2rem 1.6rem;
+    background-color: $bg-dark-50;
     box-shadow: 0 0 .1rem .1rem rgba(0, 0, 0, .1);
     text-align: center;
     border-radius: .4rem;
     color: #fff;
 
     @media (min-width: 576px) {
-      padding: $l-size;
+      padding: 3.2rem;
     }
   }
 
   &__title {
-    color: #61dafb;
-    margin: 0 0 $m-size 0;
+    color: $accent-color;
+    margin: 0 0 1.6rem 0;
   }
 
   &__tagline {

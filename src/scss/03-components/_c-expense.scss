@@ -1,0 +1,56 @@
+.c-no-expenses-text {
+  border: .1rem solid $border-color;
+  border-top: 0;
+  padding: 3.2rem 1.6rem;
+  text-align: center;
+  margin: 0;
+  color: $text-color-50;
+}
+
+.c-expense {
+  display: flex;
+  justify-content: space-between;
+  padding: 1.6rem;
+  border: .1rem solid $border-color;
+  border-top: 0;
+  text-decoration: none;
+  gap: 1.6rem 3.2rem;
+  transition: .15s;
+  color: $text-color-100;
+  cursor: pointer;
+
+  &:hover,
+  &:focus {
+    background-color: #fafafa;
+  }
+
+  @media (max-width: 575px) {
+    flex-direction: column;
+  }
+
+  &__createdAt,
+  &__amount-text {
+    margin: 0;
+  }
+
+  &__title,
+  &__amount-text {
+    font-size: 1.8rem;
+    font-weight: bold;
+  }
+
+  &__createdAt {
+    color: $text-color-50;
+    font-weight: 300;
+    font-size: 1.4rem;
+  }
+
+  &__title {
+    margin: 0 0 .8rem;
+    font-size: 2.2rem;
+  }
+
+  &__amount {
+    white-space: nowrap;
+  }
+}

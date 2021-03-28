@@ -1,5 +1,5 @@
 .c-header {
-  background-color: #20232A;
+  background-color: $bg-dark-100;
   color: #fff;
 
   &__content {
@@ -16,7 +16,7 @@
   }
 
   &__title {
-    color: #61dafb;
+    color: $accent-color;
     margin: 0;
   }
 }

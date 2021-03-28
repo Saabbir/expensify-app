@@ -1,0 +1,23 @@
+.DateRangePicker,
+.DateRangePickerInput {
+  display: block;
+  width: 100%;
+}
+
+.DateRangePickerInput__withBorder,
+.SingleDatePickerInput__withBorder {
+  border-radius: 0;
+}
+
+.DateInput_input {
+  font-size: 1.8rem;
+  font-weight: 400;
+}
+
+.DateRangePickerInput_clearDates {
+  width: 3.6rem;
+  height: 3.6rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}

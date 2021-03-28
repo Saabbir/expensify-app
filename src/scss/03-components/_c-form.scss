@@ -1,34 +1,22 @@
-.DateRangePickerInput_clearDates {
-  width: 36px;
-  height: 36px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.DateInput_input {
-  font-weight: 400;
-}
-
 .c-form {
 
   ::-webkit-input-placeholder { /* Chrome/Opera/Safari */
-    font-weight: 200;
+    font-weight: 300;
     opacity: 1;
   }
 
   ::-moz-placeholder { /* Firefox 19+ */
-    font-weight: 200;
+    font-weight: 300;
     opacity: 1;
   }
 
   :-ms-input-placeholder { /* IE 10+ */
-    font-weight: 200;
+    font-weight: 300;
     opacity: 1;
   }
 
   :-moz-placeholder { /* Firefox 18- */
-    font-weight: 200;
+    font-weight: 300;
     opacity: 1;
   }
 
@@ -46,14 +34,13 @@
   }
 
   &__control {
-    border: .1rem solid #dbdbdb;
-    border-radius: .2rem;
+    border: .1rem solid $border-color;
     background-color: #fff;
-    font-size: 19px;
-    line-height: 24px;
+    font-size: 1.8rem;
+    line-height: 2.4rem;
     font-weight: 400;
-    padding: 6px 11px;
-    min-height: 48px;
+    padding: .6rem 1.1rem;
+    min-height: 4.8rem;
 
     &:focus {
       outline: none;

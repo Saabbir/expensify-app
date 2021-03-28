@@ -5,13 +5,15 @@ import moment from 'moment';
 import numeral from 'numeral';
 
 const ExpenseListItem = ({ description, amount, createdAt, id, dispatch }) => (
-  <div>
-    <Link to={`/edit/${id}`}>
-      <h2>{ description }</h2>
-    </Link>
-    <p>Amount - { numeral(amount / 100).format('$0,0.00') }</p>
-    <p>CreatedAt - { moment(createdAt).format('MMMM Do, YYYY') }</p>
-  </div>
+  <Link className="c-expense" to={`/edit/${id}`}>
+    <div className="c-expense__desc">
+      <div className="c-expense__title">{ description }</div>
+      <p className="c-expense__createdAt">Created at { moment(createdAt).format('MMMM Do, YYYY') }</p>
+    </div>
+    <div className="c-expense__amount">
+      <div className="c-expense__amount-text">{ numeral(amount / 100).format('$0,0.00') }</div>
+    </div>
+  </Link>
 );
 
 export default connect()(ExpenseListItem);

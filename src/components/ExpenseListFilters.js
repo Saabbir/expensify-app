@@ -44,7 +44,7 @@ class ExpenseListFilters extends React.Component {
             <option value="amount">Amount</option>
           </select>
         </div>
-        <div className="c-form__group">
+        <div className="c-form__group u-flex-grow-1">
           <DateRangePicker
             startDate={this.props.filters.startDate}
             startDateId='startDateId'
