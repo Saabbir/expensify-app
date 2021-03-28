@@ -6,6 +6,7 @@ import AppRouter, { history } from './routers/AppRouter';
 import configureStore from './store/configureStore';
 import { startSetExpenses } from './actions/expenses';
 import { login, logout } from './actions/auth';
+import LoadingPage from './components/LoadingPage';
 import 'normalize.css/normalize.css';
 import 'react-dates/lib/css/_datepicker.css';
 import 'react-dates/initialize';
@@ -14,7 +15,7 @@ import './scss/index.scss';
 // Create redux store
 const store = configureStore();
 
-ReactDOM.render(<p>Loading...</p>, document.getElementById('app'));
+ReactDOM.render(<LoadingPage />, document.getElementById('app'));
 
 const app = (
   <Provider store={store}>

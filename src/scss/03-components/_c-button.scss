@@ -10,6 +10,12 @@
   text-decoration: none;
   // min-width: 20rem;
   text-align: center;
+  transition: .2s;
+
+  &:hover,
+  &:focus {
+    background-color: darken($accent-color, 10%);
+  }
 
   &--md {
     padding: 1.3rem 2.6rem;
@@ -31,8 +37,13 @@
   }
 
   &--secondary {
-    background-color: #888;
+    background-color: $bg-gray;
     color: #fff;
+
+    &:hover,
+    &:focus {
+      background-color: darken($bg-gray, 10%);
+    }
   }
 
   &--block {

@@ -1,0 +1,13 @@
+.c-loader {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 3.2rem;
+
+  &__img {
+    width: 6.4rem;
+    height: 6.4rem;
+  }
+}

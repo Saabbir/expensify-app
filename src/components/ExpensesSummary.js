@@ -13,7 +13,7 @@ const ExpensesSummary = ({ expensesCount, expensesTotal }) => {
       <div className="l-wrap">
         <h2 className="c-page-header__title">Viewing <strong>{expensesCount}</strong> {expenseWord} totalling <strong>{formattedExpenseTotal}</strong></h2>
         <div className="u-mt-32">
-          <Link to="/add" className="c-button c-button--md">Add Expense</Link>
+          <Link to="/add" className="c-button">Add Expense</Link>
         </div>
       </div>
     </div>

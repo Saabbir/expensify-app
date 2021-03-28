@@ -1,12 +1,3 @@
-.c-no-expenses-text {
-  border: .1rem solid $border-color;
-  border-top: 0;
-  padding: 3.2rem 1.6rem;
-  text-align: center;
-  margin: 0;
-  color: $text-color-50;
-}
-
 .c-expense {
   display: flex;
   justify-content: space-between;
@@ -15,13 +6,13 @@
   border-top: 0;
   text-decoration: none;
   gap: 1.6rem 3.2rem;
-  transition: .15s;
+  transition: .2s;
   color: $text-color-100;
   cursor: pointer;
 
   &:hover,
   &:focus {
-    background-color: #fafafa;
+    background-color: $bg-light-gray;
   }
 
   @media (max-width: 575px) {
@@ -53,4 +44,13 @@
   &__amount {
     white-space: nowrap;
   }
+}
+
+.c-no-expenses-text {
+  border: .1rem solid $border-color;
+  border-top: 0;
+  padding: 3.2rem 1.6rem;
+  text-align: center;
+  margin: 0;
+  font-style: italic;
 }
