@@ -5,6 +5,14 @@
   color: #000;
   font-size: 1.8rem;
   font-weight: 400;
+  display: inline-block;
+  line-height: 1;
+  text-decoration: none;
+
+  &--md {
+    padding: 1.3rem 2.6rem;
+    font-size: 1.6rem;
+  }
 
   &--sm {
     padding: 1rem 2rem;

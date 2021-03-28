@@ -22,18 +22,8 @@ input:focus {
   outline: none;
 }
 
-.l-content-wrap {
-  max-width: 60rem;
-  margin: 0 auto;
-  padding: 0 $m-size;
-}
-
-.l-page-wrapper {
-  margin-bottom: $m-size;
-
-  @media (min-width: 415px) {
-    margin-bottom: $xl-size;
-  }
+strong {
+  font-weight: bold;
 }
 
 .is-active {
