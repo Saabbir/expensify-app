@@ -16,51 +16,49 @@ class ExpenseListFilters extends React.Component {
   };  
   render() {
     return (
-      <div className="l-wrap">
-        <div className="c-form c-form--filters">
-          <div className="c-form__group">
-            <input 
-              type="text" 
-              className="c-form__control"
-              placeholder="Search Expenses" 
-              value={this.props.filters.text} 
-              onChange={(e) => {
-                this.props.dispatch(setTextFilter(e.target.value))
-              }}
-            />
-          </div>
-          <div className="c-form__group">
-            <select 
-              className="c-form__control"
-              value={this.props.filters.sortBy}
-              onChange={(e) => {
-                if (e.target.value === 'date') {
-                  this.props.dispatch(sortByDate())
-                } else if (e.target.value === 'amount') {
-                  this.props.dispatch(sortByAmount())
-                }
-              }}
-            >
-              <option value="date">Date</option>
-              <option value="amount">Amount</option>
-            </select>
-          </div>
-          <div className="c-form__group">
-            <DateRangePicker
-              startDate={this.props.filters.startDate}
-              startDateId='startDateId'
-              endDate={this.props.filters.endDate}
-              endDateId='endDateId'
-              onDatesChange={this.onDatesChange}
-              focusedInput={this.state.focusedInput}
-              onFocusChange={this.onFocusChange}
-              numberOfMonths={1}
-              isOutsideRange={() => false}
-              showClearDates={true}
-            />
-          </div>
+      <div className="c-form c-form--filters">
+        <div className="c-form__group">
+          <input 
+            type="text" 
+            className="c-form__control"
+            placeholder="Search Expenses" 
+            value={this.props.filters.text} 
+            onChange={(e) => {
+              this.props.dispatch(setTextFilter(e.target.value))
+            }}
+          />
         </div>
-      </div>      
+        <div className="c-form__group">
+          <select 
+            className="c-form__control"
+            value={this.props.filters.sortBy}
+            onChange={(e) => {
+              if (e.target.value === 'date') {
+                this.props.dispatch(sortByDate())
+              } else if (e.target.value === 'amount') {
+                this.props.dispatch(sortByAmount())
+              }
+            }}
+          >
+            <option value="date">Date</option>
+            <option value="amount">Amount</option>
+          </select>
+        </div>
+        <div className="c-form__group">
+          <DateRangePicker
+            startDate={this.props.filters.startDate}
+            startDateId='startDateId'
+            endDate={this.props.filters.endDate}
+            endDateId='endDateId'
+            onDatesChange={this.onDatesChange}
+            focusedInput={this.state.focusedInput}
+            onFocusChange={this.onFocusChange}
+            numberOfMonths={1}
+            isOutsideRange={() => false}
+            showClearDates={true}
+          />
+        </div>
+      </div>   
     );
   }
 }

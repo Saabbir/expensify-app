@@ -16,14 +16,17 @@
     font-weight: 200;
     opacity: 1;
   }
+
   ::-moz-placeholder { /* Firefox 19+ */
     font-weight: 200;
     opacity: 1;
   }
+
   :-ms-input-placeholder { /* IE 10+ */
     font-weight: 200;
     opacity: 1;
   }
+
   :-moz-placeholder { /* Firefox 18- */
     font-weight: 200;
     opacity: 1;
@@ -34,6 +37,12 @@
     align-items: center;
     gap: 1.6rem;
     flex-wrap: wrap;
+  }
+
+  &__error {
+    color: red;
+    font-style: italic;
+    font-weight: 300;
   }
 
   &__control {
