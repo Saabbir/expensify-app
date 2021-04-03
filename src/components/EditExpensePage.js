@@ -13,6 +13,7 @@ const EditExpensePage = (props) => (
     </div>
     <div className="l-wrap">
       <ExpenseForm
+        submitButtonText="Update Expense"
         expense={props.expense}
         submitHandler={(expense) => {
           props.dispatch(startEditExpense(props.expense.id, expense));

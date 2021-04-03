@@ -98,7 +98,7 @@ export default class ExpenseForm extends React.Component {
           ></textarea>
         </div>
         <div>
-          <button type="submit" className="c-button">Add Expense</button>
+          <button type="submit" className="c-button">{this.props.submitButtonText}</button>
         </div>
       </form>
     );

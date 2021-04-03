@@ -11,7 +11,8 @@ const AddExpensePage = (props) => (
       </div>
     </div>
     <div className="l-wrap">
-      <ExpenseForm 
+      <ExpenseForm
+        submitButtonText="Add Expense" 
         submitHandler={(expense) => {
           props.dispatch(startAddExpense(expense));
           props.history.push('/');

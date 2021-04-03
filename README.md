@@ -6,7 +6,7 @@ Coded this expense tracking application using React while taking Andrew Mead's U
 
 Demo can be seen in here - https://expenseer.herokuapp.com/
 
-## Technology used
+## Technology Used
 
 - Webpack 5
 - Babel
