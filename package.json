@@ -2,6 +2,11 @@
   "name": "expensify-app",
   "version": "1.0.0",
   "author": "Saabbir Hossain",
+  "private": true,
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Saabbir/expensify-app.git"
+  },
   "scripts": {
     "build": "webpack --env=production",
     "dev": "webpack serve",
