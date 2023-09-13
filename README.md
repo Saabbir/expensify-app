@@ -4,7 +4,7 @@
 
 Coded this expense tracking application using React while taking Andrew Mead's Udemy course - [The Complete React Developer Course (w/ Hooks and Redux)](https://www.udemy.com/course/react-2nd-edition/)
 
-Demo can be seen in here - https://expenseer.herokuapp.com/
+Demo can be seen in here - https://expenseer.onrender.com/
 
 ## Technology Used
 
